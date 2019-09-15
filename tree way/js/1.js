@@ -1,0 +1,22 @@
+var main = new Vue({
+    el:"#main",
+    data:{
+        foodList:[
+            {
+                name:"白菜",
+                price:3,
+                discount:0
+            },
+            {
+                name:"胡萝卜",
+                price:2,
+                discount:0
+            },
+            {
+                name:"猪肉",
+                price:30,
+                discount:0.9
+            }
+        ]
+    }
+})

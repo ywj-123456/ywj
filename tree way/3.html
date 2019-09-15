@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <button v-on="{mouseenter:onEnter,mouseleave:onOut}" v-on:click="onClick">点击</button>
+        
+        <form @keyup.enter='onKeyEnter' @submit.prevent='onSubmit' v-on:keyup='onKeyUp'>
+            <input type="text">
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/3.js"></script>
+</body>
+</html>
